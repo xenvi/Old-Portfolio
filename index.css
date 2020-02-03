@@ -1,0 +1,400 @@
+/* CSS FILE */
+*, html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Barlow", serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+p {
+	color: #3a3f43;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 0.25rem #000 !important;
+}
+
+/* navbar */
+
+.navbar {
+  box-shadow: 0 0 0.7em #000;
+}
+
+.nav-item:hover {
+	background-color: #454a5b;
+}
+
+/* parallax */
+#container {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  margin: 0;
+}
+
+.headtitle {
+	position: relative;
+  width: 25rem;
+  height: 12rem;
+  border: 2px solid #fff;
+  font-size: 3rem;
+  left: 50%;
+  margin-left: -12.5rem;
+  top: 50%;
+  margin-top: -6rem;
+	text-shadow: 0 0 0.4rem #000;
+  padding-top:3.5rem;
+}
+
+.parallax {
+  background: url(https://i.imgur.com/76r6zAt.jpg) no-repeat fixed 50% 0;
+  background-size: cover;
+  height: 55em;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-1px) scale(1.1);
+  box-shadow: inset 0 0 0.7rem #fff;
+  z-index: -2;
+}
+
+/* content */
+
+.content-container {
+  flex-direction: column;
+  min-height: 20rem;
+}
+
+.content-container h1 {
+  text-align: center;
+  font-family: "Parisienne", serif;
+  font-size: 3.5rem;
+  line-height: 90%;
+  text-shadow: 0 0 0.1em black;
+  margin-bottom: 2rem;
+}
+
+.aboutme {
+  padding: 10rem 15%;
+  text-align: justify;
+}
+
+.aboutme_wrapper {
+  float: left;
+  border-radius: 50%;
+  padding: 0.6em;
+  background: -webkit-linear-gradient(#213a73, #be747a);
+  background: -moz-linear-gradient(#213a73, #be747a);
+  background: linear-gradient(#213a73, #be747a);
+  margin-right: 2em;
+  margin-bottom: 1.5em;
+  box-shadow: inset 0 0 0.3em #fff;
+}
+#aboutmepic {
+  background-image: url("https://i.imgur.com/5YSvQyd.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  float: left;
+  border: 0.1em solid #fff;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+#aboutmepic:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  background-image: url("https://i.imgur.com/g2g1krg.jpg");
+}
+.resume {
+  padding: 7em 15%;
+  text-align: justify;
+  background-color: #ececec;
+}
+
+.projects {
+  padding: 7em 15%;
+  text-align: justify;
+  background-color: #fff;
+}
+
+.projects-box {
+  background-color: #21242a;
+  box-shadow: 0 0 0.5em #000;
+  width: 22em;
+  height: 28em;
+  padding: 1.5em;
+  border-radius: 3%;
+  overflow: auto;
+}
+
+.projects-text {
+  text-align: center;
+  color: #96a1a9;
+  overflow: auto;
+}
+
+.projects-box h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 0.1em #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  clear: both;
+  margin-bottom: 5.5rem;
+}
+
+/* triangledown */
+.triangle {
+  background: #fff;
+  position: relative;
+}
+.triangle::after,
+.triangle::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 13em;
+  background: white;
+  margin-top: -8em;
+  overflow: auto;
+}
+.triangle::before {
+  right: 50%;
+  transform: skew(0, 7deg);
+}
+.triangle::after {
+  left: 50%;
+  transform: skew(0, -7deg);
+}
+/* footer */
+footer {
+  background: linear-gradient(#213a73, #be747a);
+  background-color: #3b404a;
+  width: 100%;
+  height: 32em;
+}
+
+
+.bottomstrip {
+  background-color: #21242a;
+  width: 100%;
+  height: 15em;
+}
+
+/* footer bottom */
+.icon {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  border: 0.1em solid #fff;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.icon:hover {
+  box-shadow: 0 0 0.7em #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#icon1 {
+  background: url("https://i.imgur.com/f90thO2.png") no-repeat;
+  background-position: center;
+}
+
+#icon2 {
+  background: url("https://i.imgur.com/2WR79DJ.png") no-repeat;
+  background-position: center;
+}
+
+#icon3 {
+  background: url("https://i.imgur.com/CPLfFlY.png") no-repeat;
+  background-position: center;
+}
+
+#icon4 {
+  background: url("https://i.imgur.com/xTAD0TC.png") no-repeat;
+  background-position: center;
+}
+
+/* text highlight */
+::selection {
+  background-color: #21242a;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #a6aeb6;
+  color: #fff;
+}
+
+/** scrollbar **/
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #21242a;
+  box-shadow: inset 0 0 0.3em #000;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  box-shadow: inset 0 0 0.3em #000;
+  background: #213a73;
+  background: linear-gradient(#213a73, #be747a);
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #183169;
+  background: linear-gradient(#183169, #8f5f63);
+}
+/** end scrollbar **/
+
+/* hr lines decor */
+hr {
+  width: 16em;
+  height: 0.4em;
+  background: linear-gradient(to right, #213a73, #be747a);
+  margin-bottom: 3em;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .projects-box {
+    width: 20rem !important;
+    height: 30rem;
+    font-size: 0.9rem;
+    margin: 0 !important;
+		margin-left: 1px;
+		padding: 1rem 2rem !important;
+  }
+
+  .aboutme,
+  .projects,
+  .resume {
+    padding: 5rem 4rem !important;
+    font-size: 0.9rem;
+  }
+
+  .aboutme {
+    padding: 10rem 4rem !important;
+  }
+
+  h1 {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .projects-box {
+    width: 19rem;
+    height: 24rem;
+    font-size: 0.9rem;
+    margin: 0;
+		padding: 1rem !important;
+  }
+
+  .aboutme,
+  .projects,
+  .resume {
+    padding: 7rem 6rem !important;
+  }
+
+  .aboutme h1 {
+    margin-top: 5rem;
+  }
+}
+ @media only screen and (max-width: 600px) {
+    .projects-box {
+            width: 20rem !important;
+            height: 25rem !important;
+            font-size: 0.9rem !important;
+            margin-bottom: 2em !important;
+            padding: 1rem !important;
+          }
+        
+    .aboutme,
+     .projects,
+    .resume {
+            padding: 3rem 4rem !important;
+            font-size: 0.9rem;
+          }
+        
+     h1 {
+            font-size: 3em !important;
+            margin-top: 2rem;
+          }
+        
+          .aboutme h1 {
+            margin-top: 2rem;
+          }
+        
+    .aboutme_wrapper {
+            position: relative;
+            float: none;
+            width: 14em;
+            height: 14em;
+            left: 50%;
+            margin-left: -7em;
+          }
+        
+    #aboutmepic {
+            display: inline-block;
+            float: none;
+            margin-left: -0.1em;
+            margin-top: -0.1em;
+          }
+        
+    .projects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            clear: both;
+          }
+        
+     .parallax {
+            background: url(https://i.imgur.com/76r6zAt.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            transform: none;
+            box-shadow: none;
+          }
+        
+     .aboutme {
+            box-shadow: 0 0 1rem #fff;
+            margin-top: 1.9rem !important;
+          }
+        }
+        
